@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "home": "หน้าแรก",
+    "projects": "ผลงาน",
+    "about": "เกี่ยวกับ",
+    "contact": "ติดต่อ"
+  },
+  "home": {
+    "aboutTeaser": "เกี่ยวกับ",
+    "aboutTeaserCta": "อ่านเพิ่มเติม"
+  },
+  "projects": {
+    "heading": "ผลงาน",
+    "filterAll": "ทั้งหมด",
+    "viewProject": "ดูรายละเอียด"
+  },
+  "projectDetail": {
+    "year": "ปี",
+    "location": "สถานที่",
+    "role": "บทบาท",
+    "category": "ประเภท",
+    "back": "กลับไปหน้าผลงาน"
+  },
+  "about": {
+    "heading": "เกี่ยวกับ",
+    "philosophyHeading": "แนวคิดการออกแบบ",
+    "educationHeading": "การศึกษา",
+    "experienceHeading": "ประสบการณ์ทำงาน"
+  },
+  "contact": {
+    "heading": "ติดต่อ",
+    "intro": "สนใจร่วมงานหรือมีโปรเจกต์ในใจ ติดต่อได้โดยตรง",
+    "email": "อีเมล",
+    "phone": "โทรศัพท์",
+    "social": "ช่องทางโซเชียล"
+  },
+  "footer": {
+    "linksHeading": "หน้าเว็บ",
+    "rights": "สงวนลิขสิทธิ์"
+  }
+}

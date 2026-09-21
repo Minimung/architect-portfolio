@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "aboutTeaser": "About",
+    "aboutTeaserCta": "Read more"
+  },
+  "projects": {
+    "heading": "Projects",
+    "filterAll": "All",
+    "viewProject": "View project"
+  },
+  "projectDetail": {
+    "year": "Year",
+    "location": "Location",
+    "role": "Role",
+    "category": "Category",
+    "back": "Back to projects"
+  },
+  "about": {
+    "heading": "About",
+    "philosophyHeading": "Philosophy",
+    "educationHeading": "Education",
+    "experienceHeading": "Experience"
+  },
+  "contact": {
+    "heading": "Contact",
+    "intro": "Interested in working together or have a project in mind? Reach out directly.",
+    "email": "Email",
+    "phone": "Phone",
+    "social": "Social"
+  },
+  "footer": {
+    "linksHeading": "Explore",
+    "rights": "All rights reserved."
+  }
+}

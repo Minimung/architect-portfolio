@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Architect Portfolio
 
-## Getting Started
+A bilingual (Thai/English) architecture portfolio built with Next.js, TypeScript, Tailwind CSS, and next-intl. All content currently ships as realistic placeholders — replace it with your own before publishing.
 
-First, run the development server:
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) — it redirects to `/th` or `/en` based on your browser language. Switch languages with the `th / en` toggle in the header.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Adding your own content
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Site info (name, bio, contact)
 
-## Learn More
+Edit `content/site.ts`. Every text field is bilingual: `{ th: "...", en: "..." }`. This covers the studio/personal name, tagline, hero statement, about copy, education, experience, and contact details (email, phone, social links).
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Projects
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Edit `content/projects.ts`. Each project is an object matching the `Project` type:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```ts
+{
+  slug: "project-slug",              // used in the URL: /projects/project-slug
+  title: { th: "...", en: "..." },
+  category: "residential",           // "residential" | "commercial" | "urban" | "interior"
+  year: 2024,
+  location: "...",
+  role: { th: "...", en: "..." },
+  summary: { th: "...", en: "..." },      // shown on cards
+  description: { th: "...", en: "..." },  // shown on the project's detail page
+  featured: true,                    // shows on the homepage
+}
+```
 
-## Deploy on Vercel
+Add, remove, or reorder entries freely — the projects list page, category filter, and detail pages are all generated from this file.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To add a new project category (beyond residential/commercial/urban/interior), add it to the `ProjectCategory` type and the `categoryLabels` map at the top of `content/projects.ts`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3. Real photos
+
+Every project currently renders a `PlaceholderImage` (a labeled gradient block) instead of a real photo, so the site works before you have final images.
+
+To swap in real photos:
+1. Add your images under `public/images/<project-slug>/` (e.g. `public/images/quiet-house/01.jpg`).
+2. In `components/ProjectCard.tsx` and `app/[locale]/projects/[slug]/page.tsx`, replace the `<PlaceholderImage ... />` usage with Next's `<Image>` component, e.g.:
+   ```tsx
+   import Image from "next/image";
+
+   <Image
+     src={`/images/${project.slug}/01.jpg`}
+     alt={project.title[locale]}
+     width={1200}
+     height={800}
+     className="aspect-[4/3] w-full object-cover"
+   />
+   ```
+3. You can then delete `components/PlaceholderImage.tsx` once every usage is replaced.
+
+### 4. UI text (navigation, labels, buttons)
+
+Fixed interface strings (nav labels, "View all projects", form labels, etc.) live in `messages/en.json` and `messages/th.json`. Edit both files to keep translations in sync.
+
+## Project structure
+
+```
+app/[locale]/          # routes, one tree shared by /th and /en via next-intl
+components/            # Header, Footer, ProjectCard, ProjectGrid, etc.
+content/               # site.ts (bio/contact) and projects.ts (project data)
+messages/              # en.json / th.json — fixed UI strings
+i18n/                  # next-intl routing + request config
+proxy.ts               # locale detection/redirect (Next.js 16's renamed middleware)
+```
+
+## Deploying to Vercel
+
+1. Push this project to a GitHub repository.
+2. Go to [vercel.com/new](https://vercel.com/new) and import the repository.
+3. Vercel auto-detects Next.js — no configuration needed. Click Deploy.
+4. Once live, add a custom domain under the project's Settings → Domains.
+
+Alternatively, deploy from the CLI:
+
+```bash
+npx vercel
+```
+
+## Build & lint
+
+```bash
+npm run build   # production build + type check
+npm run lint    # eslint
+```
