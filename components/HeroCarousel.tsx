@@ -2,15 +2,22 @@
 
 import { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { Link } from "@/i18n/routing";
+import { Link, type Locale } from "@/i18n/routing";
 import type { Project } from "@/content/projects";
 import { site } from "@/content/site";
 import ProjectImage from "./ProjectImage";
 
+function getSlideOffset(i: number, activeIndex: number, total: number) {
+  if (total <= 1) {
+    return 0;
+  }
+  return ((i - activeIndex + total + 1) % total) - 1;
+}
+
 export default function HeroCarousel({ projects }: { projects: Project[] }) {
   const [index, setIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const locale = useLocale() as "th" | "en";
+  const locale = useLocale() as Locale;
   const t = useTranslations("home");
 
   useEffect(() => {
@@ -39,22 +46,26 @@ export default function HeroCarousel({ projects }: { projects: Project[] }) {
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      {projects.map((project, i) => (
-        <div
-          key={project.slug}
-          className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-            i === index ? "opacity-100" : "pointer-events-none opacity-0"
-          }`}
-        >
-          <ProjectImage
-            project={project}
-            label={project.title[locale]}
-            index={i}
-            className="h-full w-full"
-            priority={i === 0}
-          />
-        </div>
-      ))}
+      {projects.map((project, i) => {
+        const offset = getSlideOffset(i, index, projects.length);
+        return (
+          <div
+            key={project.slug}
+            className={`absolute inset-0 transition-transform duration-700 ease-in-out ${
+              offset === 0 ? "" : "pointer-events-none"
+            }`}
+            style={{ transform: `translateX(${offset * 100}%)` }}
+          >
+            <ProjectImage
+              project={project}
+              label={project.title[locale]}
+              index={i}
+              className="h-full w-full"
+              priority={i === 0}
+            />
+          </div>
+        );
+      })}
 
       <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/50 to-transparent" />
 

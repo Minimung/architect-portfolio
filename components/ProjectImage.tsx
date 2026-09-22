@@ -1,6 +1,6 @@
-import Image from "next/image";
 import type { Project } from "@/content/projects";
 import PlaceholderImage from "./PlaceholderImage";
+import Photo from "./Photo";
 
 export default function ProjectImage({
   project,
@@ -22,15 +22,12 @@ export default function ProjectImage({
   }
 
   return (
-    <div className={`relative overflow-hidden ${className}`}>
-      <Image
-        src={project.coverImage}
-        alt={label}
-        fill
-        sizes={sizes}
-        priority={priority}
-        className="object-cover"
-      />
-    </div>
+    <Photo
+      src={project.coverImage}
+      alt={label}
+      className={className}
+      sizes={sizes}
+      priority={priority}
+    />
   );
 }

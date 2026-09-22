@@ -1,19 +1,20 @@
 import { useLocale, useTranslations } from "next-intl";
-import { Link } from "@/i18n/routing";
+import { Link, type Locale } from "@/i18n/routing";
 import { site } from "@/content/site";
 
 export default function Footer() {
-  const locale = useLocale() as "th" | "en";
+  const locale = useLocale() as Locale;
   const t = useTranslations("footer");
   const tNav = useTranslations("nav");
   const tContact = useTranslations("contact");
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-24 border-t border-neutral-200 bg-neutral-50">
+    //mt-24 border-t border-neutral-200 bg-neutral-50
+    <footer className="mt-24 border-t border-[#FEFEBE] bg-[#FEFEBE]">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 py-16 sm:grid-cols-3 sm:py-20">
         <div>
-          <p className="font-serif text-lg">{site.name}</p>
+          {site.name && <p className="font-serif text-lg">{site.name}</p>}
           <p className="mt-2 max-w-xs text-sm text-neutral-500">
             {site.tagline[locale]}
           </p>
@@ -75,9 +76,10 @@ export default function Footer() {
 
       <div className="border-t border-neutral-200">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-6 text-xs text-neutral-500 sm:flex-row sm:justify-between">
-          <span>{site.name}</span>
+          {site.name && <span>{site.name}</span>}
           <span>
-            © {year} {site.name}. {t("rights")}
+            © {year} {site.name && `${site.name}. `}
+            {t("rights")}
           </span>
         </div>
       </div>

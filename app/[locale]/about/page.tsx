@@ -1,4 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import type { Locale } from "@/i18n/routing";
 import { site } from "@/content/site";
 
 export default async function AboutPage({
@@ -7,7 +8,7 @@ export default async function AboutPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("about");
-  const loc = locale as "th" | "en";
+  const loc = locale as Locale;
 
   return (
     <div className="mx-auto max-w-3xl px-6 py-16 sm:py-24">

@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "home": "首页",
+    "projects": "作品",
+    "about": "关于",
+    "contact": "联系"
+  },
+  "home": {
+    "aboutTeaser": "关于",
+    "aboutTeaserCta": "阅读更多"
+  },
+  "projects": {
+    "heading": "作品",
+    "filterAll": "全部",
+    "viewProject": "查看详情"
+  },
+  "projectDetail": {
+    "year": "年份",
+    "location": "地点",
+    "role": "角色",
+    "category": "类别",
+    "back": "返回作品列表"
+  },
+  "about": {
+    "heading": "关于",
+    "philosophyHeading": "设计理念",
+    "educationHeading": "学历",
+    "experienceHeading": "工作经历"
+  },
+  "contact": {
+    "heading": "联系",
+    "intro": "有兴趣合作或有项目想法？欢迎直接联系。",
+    "email": "邮箱",
+    "phone": "电话",
+    "social": "社交媒体"
+  },
+  "footer": {
+    "linksHeading": "导航",
+    "rights": "版权所有。"
+  }
+}

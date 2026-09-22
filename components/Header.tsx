@@ -18,17 +18,19 @@ export default function Header() {
           : "border-b border-neutral-200"
       }
     >
-      <div className="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-5 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
-        <Link
-          href="/"
-          className={`whitespace-nowrap font-serif text-lg tracking-tight ${
-            isHome ? "text-white" : ""
-          }`}
-        >
-          {site.name}
-        </Link>
+      <div className="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-5 sm:flex-row sm:items-center sm:gap-4">
+        {site.name && (
+          <Link
+            href="/"
+            className={`whitespace-nowrap font-serif text-lg tracking-tight ${
+              isHome ? "text-white" : ""
+            }`}
+          >
+            {site.name}
+          </Link>
+        )}
         <nav
-          className={`flex flex-wrap items-center gap-x-4 gap-y-2 text-sm sm:gap-x-7 ${
+          className={`flex flex-wrap items-center gap-x-4 gap-y-2 text-sm sm:ml-auto sm:gap-x-7 ${
             isHome ? "text-white" : "text-neutral-700"
           }`}
         >

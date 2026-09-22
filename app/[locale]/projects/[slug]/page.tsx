@@ -1,9 +1,10 @@
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Link, routing } from "@/i18n/routing";
+import { Link, routing, type Locale } from "@/i18n/routing";
 import { categoryLabels, getProjectBySlug, projects } from "@/content/projects";
 import ProjectImage from "@/components/ProjectImage";
 import PlaceholderImage from "@/components/PlaceholderImage";
+import Photo from "@/components/Photo";
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
@@ -17,7 +18,7 @@ export default async function ProjectDetailPage({
   const { locale, slug } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("projectDetail");
-  const loc = locale as "th" | "en";
+  const loc = locale as Locale;
   const project = getProjectBySlug(slug);
 
   if (!project) {
@@ -69,16 +70,24 @@ export default async function ProjectDetailPage({
       </p>
 
       <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
-        <PlaceholderImage
-          label={`${project.title[loc]} — 02`}
-          className="aspect-[4/3]"
-          index={1}
-        />
-        <PlaceholderImage
-          label={`${project.title[loc]} — 03`}
-          className="aspect-[4/3]"
-          index={2}
-        />
+        {project.gallery && project.gallery.length > 0
+          ? project.gallery.map((src, i) => (
+              <Photo
+                key={`${i}-${src}`}
+                src={src}
+                alt={`${project.title[loc]} — ${i + 2}`}
+                className="aspect-[4/3]"
+                sizes="(min-width: 640px) 50vw, 100vw"
+              />
+            ))
+          : [1, 2].map((n) => (
+              <PlaceholderImage
+                key={n}
+                label={`${project.title[loc]} — 0${n + 1}`}
+                className="aspect-[4/3]"
+                index={n}
+              />
+            ))}
       </div>
     </div>
   );

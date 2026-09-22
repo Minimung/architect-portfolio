@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import type { Locale } from "@/i18n/routing";
 import {
   categoryLabels,
   type Project,
@@ -28,7 +29,7 @@ export default function ProjectGrid({
   const [active, setActive] = useState<ProjectCategory | "all">(
     initialCategory ?? "all",
   );
-  const locale = useLocale() as "th" | "en";
+  const locale = useLocale() as Locale;
   const t = useTranslations("projects");
 
   const filtered =

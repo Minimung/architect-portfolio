@@ -1,5 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Link } from "@/i18n/routing";
+import { Link, type Locale } from "@/i18n/routing";
 import HeroCarousel from "@/components/HeroCarousel";
 import CategoryGrid from "@/components/CategoryGrid";
 import { getFeaturedProjects } from "@/content/projects";
@@ -9,7 +9,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("home");
-  const loc = locale as "th" | "en";
+  const loc = locale as Locale;
   const featured = getFeaturedProjects().slice(0, 3);
 
   return (

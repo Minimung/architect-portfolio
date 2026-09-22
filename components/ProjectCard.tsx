@@ -1,5 +1,5 @@
 import { useLocale } from "next-intl";
-import { Link } from "@/i18n/routing";
+import { Link, type Locale } from "@/i18n/routing";
 import { tagLabels, type Project } from "@/content/projects";
 import ProjectImage from "./ProjectImage";
 
@@ -10,7 +10,7 @@ export default function ProjectCard({
   project: Project;
   index?: number;
 }) {
-  const locale = useLocale() as "th" | "en";
+  const locale = useLocale() as Locale;
 
   return (
     <Link href={`/projects/${project.slug}`} className="group block">
