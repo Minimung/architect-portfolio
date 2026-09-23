@@ -69,6 +69,53 @@ export default function HeroCarousel({ projects }: { projects: Project[] }) {
 
       <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/50 to-transparent" />
 
+      {projects.length > 1 && (
+        <>
+          <button
+            type="button"
+            aria-label="Previous"
+            onClick={() => goTo(index - 1)}
+            className="absolute left-4 top-1/2 -translate-y-1/2 text-white/70 transition-colors hover:text-white sm:left-8"
+          >
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+            >
+              <path
+                d="M15 6l-6 6 6 6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+          <button
+            type="button"
+            aria-label="Next"
+            onClick={() => goTo(index + 1)}
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-white/70 transition-colors hover:text-white sm:right-8"
+          >
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+            >
+              <path
+                d="M9 6l6 6-6 6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+        </>
+      )}
+
       <div className="absolute inset-x-0 bottom-0 flex flex-col gap-4 bg-gradient-to-t from-black/60 to-transparent px-6 pb-6 pt-20 text-white sm:flex-row sm:items-end sm:justify-between sm:px-10 sm:pb-10">
         <Link
           key={active.slug}
@@ -83,38 +130,6 @@ export default function HeroCarousel({ projects }: { projects: Project[] }) {
             {t("aboutTeaserCta")} →
           </span>
         </Link>
-
-        <div className="flex items-center gap-6 self-center">
-          <button
-            type="button"
-            aria-label="Previous"
-            onClick={() => goTo(index - 1)}
-            className="text-white/80 hover:text-white"
-          >
-            ←
-          </button>
-          <div className="flex items-center gap-2">
-            {projects.map((project, i) => (
-              <button
-                key={project.slug}
-                type="button"
-                aria-label={`Go to slide ${i + 1}`}
-                onClick={() => goTo(i)}
-                className={`h-1.5 w-1.5 rounded-full transition-colors ${
-                  i === index ? "bg-white" : "bg-white/40"
-                }`}
-              />
-            ))}
-          </div>
-          <button
-            type="button"
-            aria-label="Next"
-            onClick={() => goTo(index + 1)}
-            className="text-white/80 hover:text-white"
-          >
-            →
-          </button>
-        </div>
 
         <p className="text-xs text-white/70 sm:text-right">
           {site.heroCredit.name}

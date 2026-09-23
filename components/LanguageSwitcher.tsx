@@ -21,7 +21,7 @@ export default function LanguageSwitcher({ light = false }: { light?: boolean })
             type="button"
             onClick={() => router.replace(pathname, { locale: loc })}
             aria-current={loc === locale}
-            className={
+            className={`uppercase ${
               loc === locale
                 ? light
                   ? "font-semibold text-white"
@@ -29,7 +29,7 @@ export default function LanguageSwitcher({ light = false }: { light?: boolean })
                 : light
                   ? "text-white/60 hover:text-white"
                   : "text-neutral-400 hover:text-neutral-600"
-            }
+            }`}
           >
             {loc}
           </button>

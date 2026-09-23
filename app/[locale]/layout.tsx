@@ -25,7 +25,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: site.name ? `${site.name} — Architect` : "Architect",
+  title: site.name ? `${site.name} — Architect` : "Profolio Wp",
   description: "Architecture portfolio",
 };
 

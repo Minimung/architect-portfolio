@@ -24,7 +24,7 @@ export default function ProjectCard({
       <p className="mt-3 text-xs uppercase tracking-wider text-neutral-500">
         {project.tags.map((tag) => tagLabels[tag][locale]).join(" · ")}
       </p>
-      <h3 className="mt-1 font-serif text-lg group-hover:underline">
+      <h3 className="mt-1 font-serif text-base group-hover:underline">
         {project.title[locale]}
       </h3>
     </Link>

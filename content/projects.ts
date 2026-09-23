@@ -79,7 +79,11 @@ export const projects: Project[] = [
     },
     category: "landscape-intern",
     tags: ["architecture", "landscape", "projects"],
-    coverImage: "/images/resort-chiangmai/01.webp",
+    coverImage: "/images/shanxi-huangcheng-xiangfu/01.png",
+    gallery: [
+      "/images/shanxi-huangcheng-xiangfu/02.png",
+      "/images/shanxi-huangcheng-xiangfu/03.png",
+    ],
     year: 2023,
     location: {
       th: "หวงเฉิงเซียงฝู, มณฑลซานซี, ประเทศจีน",
@@ -250,17 +254,18 @@ export const projects: Project[] = [
     coverImage: "/images/resort-chiangmai/01.webp",
     year: 2023,
     location: { th: "กรุงเทพมหานคร, ประเทศไทย", en: "Bangkok, Thailand", zh: "泰国, 曼谷" },
-    role: { th: "ออกแบบพื้นที่สาธารณะ ภูมิทัศน์ และวางผังพื้นที่", en: "Public Space, Landscape & Spatial Planning", zh: "公共空间、景观与空间规划设计" }, 
+    role: { th: "ออกแบบพื้นที่สาธารณะ ภูมิทัศน์ และวางผังพื้นที่", en: "Public Space, Landscape & Spatial Planning", zh: "公共空间、景观与空间规划设计" },
     summary: {
       th: "",
       en: "",
       zh: "",
     },
-    description: { 
-      th: "โครงการ Green (Liab Duan) Expressway Public Space – Zone C: Sport Field พัฒนาพื้นที่ใต้ทางด่วนให้เป็นพื้นที่สาธารณะและชุมชนเพื่อสุขภาพ ภายใต้แนวคิด “Urban Spectrum” ซึ่งสะท้อนความหลากหลายของผู้ใช้งานและกิจกรรม โดยเปลี่ยนพื้นที่ที่เคยถูกละเลยให้เป็น Third Place สำหรับกีฬา สุขภาพ และกิจกรรมของชุมชน การออกแบบให้ความสำคัญกับการเข้าถึงและการเชื่อมต่อระหว่างพื้นที่ พร้อมปรับระดับพื้น ระบบระบายน้ำ พื้นผิวซึมน้ำ และโครงสร้างพื้นฐานสีเขียวเพื่อเพิ่มความปลอดภัยและความยืดหยุ่นของพื้นที่ ระบบจัดการน้ำฝนประกอบด้วย Rain → Slope → Trench → Rain Garden → Underground Tank → Drip Irrigation → Overflow เพื่อช่วยลดน้ำท่วม ปรับปรุงคุณภาพน้ำ และนำน้ำกลับมาใช้กับพื้นที่สีเขียว นอกจากนี้ยังเลือกใช้พืชท้องถิ่นและพืชทนร่ม พร้อมออกแบบพื้นที่อเนกประสงค์เพื่อส่งเสริมการออกกำลังกาย ปฏิสัมพันธ์ของชุมชน และคุณภาพชีวิตในเมือง",  
-      en: "Green (Liab Duan) Expressway Public Space – Zone C: Sport Field transforms the under-expressway area into an active health-oriented community space through the concept of “Urban Spectrum.” The spectrum represents diverse users and activities, turning a previously neglected site into a shared third place for sports, wellness, and community life. The design improves accessibility and connectivity while introducing slope grading, drainage, permeable paving, and resilient green infrastructure. An integrated stormwater management system follows the sequence Rain → Slope → Trench → Rain Garden → Underground Tank → Drip Irrigation → Overflow, helping to reduce flooding, improve water quality, and reuse rainwater for landscape irrigation. Local and shade-tolerant planting strengthens the environmental character of the site, while flexible multi-use spaces encourage physical activity, social interaction, and community well-being.",     
-      zh: "Green（Liab Duan）高速公路桥下公共空间 Zone C：运动区，以“Urban Spectrum（城市光谱）”为核心概念，将原本被忽视的桥下空间转化为充满活力的健康社区公共空间。“光谱”象征不同使用者与多样化活动，使场地成为集运动、健康与社区交流于一体的城市第三空间。设计重点改善场地的可达性与区域连接，并通过地形坡度调整、排水系统、透水铺装及绿色基础设施提升空间的安全性与韧性。雨洪管理系统采用“降雨 → 坡地 → 排水沟 → 雨水花园 → 地下储水池 → 滴灌 → 溢流”的循环方式，以减少积水、改善水质并将雨水重新用于景观灌溉。同时选用本地及耐阴植物营造可持续绿色环境，并设置灵活的多功能活动空间，促进运动、社区互动与城市生活品质。" },
-    featured: true,
+    description: {
+      th: "โครงการ Green (Liab Duan) Expressway Public Space – Zone C: Sport Field พัฒนาพื้นที่ใต้ทางด่วนให้เป็นพื้นที่สาธารณะและชุมชนเพื่อสุขภาพ ภายใต้แนวคิด “Urban Spectrum” ซึ่งสะท้อนความหลากหลายของผู้ใช้งานและกิจกรรม โดยเปลี่ยนพื้นที่ที่เคยถูกละเลยให้เป็น Third Place สำหรับกีฬา สุขภาพ และกิจกรรมของชุมชน การออกแบบให้ความสำคัญกับการเข้าถึงและการเชื่อมต่อระหว่างพื้นที่ พร้อมปรับระดับพื้น ระบบระบายน้ำ พื้นผิวซึมน้ำ และโครงสร้างพื้นฐานสีเขียวเพื่อเพิ่มความปลอดภัยและความยืดหยุ่นของพื้นที่ ระบบจัดการน้ำฝนประกอบด้วย Rain → Slope → Trench → Rain Garden → Underground Tank → Drip Irrigation → Overflow เพื่อช่วยลดน้ำท่วม ปรับปรุงคุณภาพน้ำ และนำน้ำกลับมาใช้กับพื้นที่สีเขียว นอกจากนี้ยังเลือกใช้พืชท้องถิ่นและพืชทนร่ม พร้อมออกแบบพื้นที่อเนกประสงค์เพื่อส่งเสริมการออกกำลังกาย ปฏิสัมพันธ์ของชุมชน และคุณภาพชีวิตในเมือง",
+      en: "Green (Liab Duan) Expressway Public Space – Zone C: Sport Field transforms the under-expressway area into an active health-oriented community space through the concept of “Urban Spectrum.” The spectrum represents diverse users and activities, turning a previously neglected site into a shared third place for sports, wellness, and community life. The design improves accessibility and connectivity while introducing slope grading, drainage, permeable paving, and resilient green infrastructure. An integrated stormwater management system follows the sequence Rain → Slope → Trench → Rain Garden → Underground Tank → Drip Irrigation → Overflow, helping to reduce flooding, improve water quality, and reuse rainwater for landscape irrigation. Local and shade-tolerant planting strengthens the environmental character of the site, while flexible multi-use spaces encourage physical activity, social interaction, and community well-being.",
+      zh: "Green（Liab Duan）高速公路桥下公共空间 Zone C：运动区，以“Urban Spectrum（城市光谱）”为核心概念，将原本被忽视的桥下空间转化为充满活力的健康社区公共空间。“光谱”象征不同使用者与多样化活动，使场地成为集运动、健康与社区交流于一体的城市第三空间。设计重点改善场地的可达性与区域连接，并通过地形坡度调整、排水系统、透水铺装及绿色基础设施提升空间的安全性与韧性。雨洪管理系统采用“降雨 → 坡地 → 排水沟 → 雨水花园 → 地下储水池 → 滴灌 → 溢流”的循环方式，以减少积水、改善水质并将雨水重新用于景观灌溉。同时选用本地及耐阴植物营造可持续绿色环境，并设置灵活的多功能活动空间，促进运动、社区互动与城市生活品质。"
+    },
+    featured: false,
   },
   //urban-planning 2
   {
@@ -281,101 +286,87 @@ export const projects: Project[] = [
       en: "",
       zh: "",
     },
-    description: { 
-      th: "Bangkok 2023: Park of the Future เป็นโครงการที่ตั้งอยู่บนจินตภาพของอนาคตกรุงเทพฯ ในภาวะวิกฤต ซึ่งอาหาร น้ำสะอาด และคุณภาพอากาศได้รับผลกระทบจากกิจกรรมของมนุษย์ แนวคิดหลักของโครงการคือ “Optimize – Living in Balance” โดยมุ่งสร้างสมดุลระหว่างการจัดการน้ำและอาหาร การเพิ่มพื้นที่สีเขียวและระบบนิเวศที่ดีในเมือง รวมถึงการออกแบบพื้นที่สาธารณะที่เข้าถึงง่ายและตอบสนองต่อชุมชน โครงการพัฒนาในรูปแบบโมดูลที่เชื่อมต่อกันเป็นเครือข่าย แต่ละโมดูลรองรับฟังก์ชันที่แตกต่างกัน เช่น การผลิตอาหาร การประกอบอาหาร พื้นที่นั่งพัก การเก็บน้ำ การกักเก็บพลังงาน และการขยายพื้นที่สีเขียว โมดูลลอยน้ำถูกออกแบบให้มีความยืดหยุ่นสูง โดยด้านล่างสามารถเป็นที่อยู่อาศัยของสิ่งมีชีวิตน้ำ ช่วยส่งเสริมความหลากหลายทางชีวภาพและเชื่อมธรรมชาติเข้ากับเมือง โครงการสะท้อนแนวคิด “New Hope City” ที่เสนอแนวทางการอยู่ร่วมกันอย่างพอเหมาะ พึ่งพาทรัพยากรอย่างรู้คุณค่า และสร้างอนาคตเมืองที่ยั่งยืนมากขึ้น",  
+    description: {
+      th: "Bangkok 2023: Park of the Future เป็นโครงการที่ตั้งอยู่บนจินตภาพของอนาคตกรุงเทพฯ ในภาวะวิกฤต ซึ่งอาหาร น้ำสะอาด และคุณภาพอากาศได้รับผลกระทบจากกิจกรรมของมนุษย์ แนวคิดหลักของโครงการคือ “Optimize – Living in Balance” โดยมุ่งสร้างสมดุลระหว่างการจัดการน้ำและอาหาร การเพิ่มพื้นที่สีเขียวและระบบนิเวศที่ดีในเมือง รวมถึงการออกแบบพื้นที่สาธารณะที่เข้าถึงง่ายและตอบสนองต่อชุมชน โครงการพัฒนาในรูปแบบโมดูลที่เชื่อมต่อกันเป็นเครือข่าย แต่ละโมดูลรองรับฟังก์ชันที่แตกต่างกัน เช่น การผลิตอาหาร การประกอบอาหาร พื้นที่นั่งพัก การเก็บน้ำ การกักเก็บพลังงาน และการขยายพื้นที่สีเขียว โมดูลลอยน้ำถูกออกแบบให้มีความยืดหยุ่นสูง โดยด้านล่างสามารถเป็นที่อยู่อาศัยของสิ่งมีชีวิตน้ำ ช่วยส่งเสริมความหลากหลายทางชีวภาพและเชื่อมธรรมชาติเข้ากับเมือง โครงการสะท้อนแนวคิด “New Hope City” ที่เสนอแนวทางการอยู่ร่วมกันอย่างพอเหมาะ พึ่งพาทรัพยากรอย่างรู้คุณค่า และสร้างอนาคตเมืองที่ยั่งยืนมากขึ้น",
 
       en: "Bangkok 2023: Park of the Future is based on a dystopian vision of Bangkok, where food security, clean water, and air quality are at risk due to human activities. The project is guided by the concept of “Optimize – Living in Balance,” aiming to create equilibrium between water and food management, urban green spaces and healthy ecosystems, and accessible public space for the community. The design is developed through interconnected modular units, each supporting different functions such as food production, cooking, serving, picnicking, water collection, and energy storage. These modules form a flexible network that expands green space, reduces heat, and supports urban resilience. Floating modules are designed with adaptive capacity, while their undersides provide habitats for aquatic life, promoting biodiversity and ecological integration. The project presents the idea of a “New Hope City,” where future urban living is shaped by moderation, resource awareness, and sustainable coexistence between people, nature, and infrastructure.",
-      zh: "“曼谷2023：未来公园”项目建立在对未来曼谷的反乌托邦想象之上：由于人类活动的影响，食物安全、清洁水源与空气质量都面临风险。项目以“Optimize – Living in Balance（优化——平衡生活）”为核心理念，致力于在水与食物管理、城市绿地与健康生态系统，以及社区可达且可使用的公共空间之间建立平衡。设计采用彼此连接的模块化单元系统，每个模块承担不同功能，例如食物生产、烹饪、共享用餐、野餐、雨水收集与能源储存。这些模块共同形成灵活的城市网络，可扩展绿地、缓解热环境，并提升城市韧性。漂浮模块具有高度适应性，其底部还可作为水生生物栖息地，促进生物多样性并加强自然与城市之间的融合。项目提出“New Hope City（新希望城市）”的愿景，强调以适度、资源意识与可持续共存为基础，构建未来城市生活的新模式。" },
+      zh: "“曼谷2023：未来公园”项目建立在对未来曼谷的反乌托邦想象之上：由于人类活动的影响，食物安全、清洁水源与空气质量都面临风险。项目以“Optimize – Living in Balance（优化——平衡生活）”为核心理念，致力于在水与食物管理、城市绿地与健康生态系统，以及社区可达且可使用的公共空间之间建立平衡。设计采用彼此连接的模块化单元系统，每个模块承担不同功能，例如食物生产、烹饪、共享用餐、野餐、雨水收集与能源储存。这些模块共同形成灵活的城市网络，可扩展绿地、缓解热环境，并提升城市韧性。漂浮模块具有高度适应性，其底部还可作为水生生物栖息地，促进生物多样性并加强自然与城市之间的融合。项目提出“New Hope City（新希望城市）”的愿景，强调以适度、资源意识与可持续共存为基础，构建未来城市生活的新模式。"
+    },
     featured: false,
   },
   //urban-planning 3
   {
     slug: "saan-wiang-chiang-mai-walkable-city",
-    title: { th: "โครงการออกแบบและพัฒนาภูมิสถาปัตยกรรมชุมชนย่านการค้าเมืองเก่าทับเที่ยง", en: "Thap Thiang Old City Creative Community Design", zh: "塔天老城创意社区景观设计项目" }, 
+    title: { th: "โครงการออกแบบ Saan Wiang: Good Walk Chiang Mai Walkable City", en: "Saan Wiang: Good Walk Chiang Mai Walkable City", zh: "Saan Wiang：清迈宜步城市设计项目" },
     category: "urban-planning",
     tags: ["landscape", "urban"],
     coverImage: "/images/resort-chiangmai/01.webp",
     year: 2023,
-    location: { th: "ทับเที่ยง จังหวัดตรัง ประเทศไทย", en: "Thap Thiang, Trang, Thailand", zh: "泰国 董里府 塔天" }, 
-    role: { th: "ออกแบบภูมิทัศน์ชุมชน วางผังพื้นที่ และฟื้นฟูย่านเมืองเก่า", en: "Community Landscape, Spatial Planning & Urban Regeneration", zh: "社区景观、空间规划与老城更新设计" },  
+    location: { th: "เชียงใหม่, ประเทศไทย", en: "Chiang Mai, Thailand", zh: "泰国 清迈" },
+    role: { th: "ออกแบบพื้นที่สาธารณะ ทางเดินเท้า และภูมิทัศน์เมือง", en: "Public Space, Pedestrian & Urban Landscape Design", zh: "公共空间、步行系统与城市景观设计" },
     summary: {
-      th: "ผังปลูกพืชพรรณสำหรับสวนสาธารณะริมแม่น้ำ เน้นพันธุ์ไม้ท้องถิ่นที่ทนน้ำท่วมตามฤดูกาล",
-      en: "A planting plan for a riverside public park, favoring native species tolerant of seasonal flooding.",
-      zh: "为滨水公共公园制定的种植规划，优先选用耐季节性洪涝的本地物种。",
+      th: "",
+      en: "",
+      zh: "",
     },
-    description: { 
-      th: "โครงการพัฒนาย่านการค้าเมืองเก่าทับเที่ยงมุ่งฟื้นฟูพื้นที่ประวัติศาสตร์ควบคู่กับการส่งเสริมเศรษฐกิจสร้างสรรค์ โดยได้รับแรงบันดาลใจจากวัฒนธรรมร้านโกปีและแนวคิด “The Table” ซึ่งมองโต๊ะเป็นมากกว่าเฟอร์นิเจอร์ แต่เป็นพื้นที่แห่งการพบปะ การสื่อสาร และการสร้างสรรค์ร่วมกัน โครงการสำรวจและประเมินคุณค่าของอาคารเดิมเพื่อกำหนดแนวทางอนุรักษ์ ซ่อมแซม ปรับใช้ และฟื้นฟูให้เหมาะสมกับสภาพและคุณค่าทางประวัติศาสตร์ พื้นที่ถูกพัฒนาเป็น 3 โซนหลัก ได้แก่ “Work Table” บริเวณหอนาฬิกาและโรงแรมเก่า เพื่อสร้างชุมชนสร้างสรรค์และพื้นที่ทำงาน “Reception Table” บริเวณตลาดเทศบาล เพื่อฟื้นฟูต้นกำเนิดวัฒนธรรมโกปีและสร้างพื้นที่พบปะของชุมชน และ “Leisure Table” บริเวณคลองห้วยยาง เพื่อฟื้นฟูพื้นที่ริมน้ำด้วยระบบบำบัดน้ำ พืชบำบัด Rain Garden พื้นที่นั่งพัก และกิจกรรมสาธารณะ นอกจากนี้ยังเสนอแนวทางปรับปรุงด้านหน้าอาคารริมคลองโดยอาศัยความร่วมมือโดยสมัครใจระหว่างเจ้าของอาคาร ภาครัฐ และชุมชน เพื่อยกระดับภูมิทัศน์ อัตลักษณ์ และคุณค่าทางวัฒนธรรมของย่านอย่างยั่งยืน",  
+    description: {
+      th: "Saan Wiang: Good Walk Chiang Mai Walkable City เป็นโครงการพัฒนาพื้นที่เมืองบนถนนท่าแพ จังหวัดเชียงใหม่ ภายใต้แนวคิดเมืองเดินได้ที่ให้ความสำคัญกับความปลอดภัย ความสะดวก และคุณภาพของประสบการณ์การเดิน แนวคิด “Saan Wiang” มุ่งเปลี่ยนมุมมองต่อทางเท้าจากเพียงโครงสร้างพื้นฐานสำหรับการเดิน ให้กลายเป็น “โครงสร้างพื้นฐานของพื้นที่สาธารณะ” ที่เชื่อมโยงชุมชน อาคาร กิจกรรม และผู้คนเข้าด้วยกัน การออกแบบสะท้อนความหลากหลายของเชียงใหม่ ทั้งด้านวัฒนธรรม วิถีชีวิต และอัตลักษณ์ของเมือง พร้อมสร้างพื้นที่ที่ทุกคนสามารถเข้าถึงและใช้งานร่วมกันได้อย่างเท่าเทียม ส่งเสริมการเดิน การมีปฏิสัมพันธ์ และคุณภาพชีวิตของชุมชนเมือง",
 
-      en: "The Thap Thiang Old City Creative Community project revitalizes the historic commercial district while supporting the creative economy. Inspired by local Kopi coffee-shop culture, the concept of “The Table” transforms everyday gathering spaces into platforms for communication, collaboration, and creative exchange. Existing buildings were surveyed and assessed to establish appropriate strategies for preservation, repair, adaptive reuse, and structural rehabilitation according to their condition and cultural value. The project is organized into three key zones: the “Work Table” around the clock tower and an old hotel, reimagined as a creative community and workspace; the “Reception Table” at the municipal market, strengthening its role as the origin of local Kopi culture and a social-commercial hub; and the “Leisure Table” along Huai Yang Canal, where water treatment, rain gardens, shaded seating, and small activity spaces help reconnect people with the historic waterfront. Voluntary façade improvement guidelines are also proposed to encourage collaboration between property owners, government agencies, and the community while strengthening the area's cultural identity and urban character.", 
-    
-      zh: "塔天老城创意社区项目旨在通过历史街区更新与创意经济发展，重新激活传统商业社区。设计灵感来源于当地“Kopi”咖啡店文化，并以“The Table（桌子）”为核心概念，将桌子视为交流、聚会、协作与创意活动发生的平台。项目首先对现有建筑进行调查与价值评估，并根据建筑状况及历史文化价值提出保护、修缮、适应性改造及结构修复等不同策略。整体规划分为三个主要区域：“Work Table（工作之桌）”位于钟楼及老酒店周边，将其转化为创意社区与工作空间；“Reception Table（迎宾之桌）”位于市政市场，通过更新商业、停车及公共交流空间，强化当地Kopi文化与社区生活；“Leisure Table（休闲之桌）”位于Huai Yang运河沿岸，通过水处理系统、生态植物、雨水花园、遮荫座椅及活动空间恢复滨水公共生活。项目同时提出自愿参与的沿河建筑立面改善方案，鼓励业主、政府与社区共同参与，以提升老城的景观品质、文化价值与地方认同。" },
+
+      en: "Saan Wiang: Good Walk Chiang Mai Walkable City is an urban design project along Tha Phae Road in Chiang Mai, focusing on safe, convenient, and comfortable walking environments. The “Saan Wiang” concept reimagines sidewalks not simply as walking infrastructure, but as “public space infrastructure” that continuously connects neighborhoods, buildings, activities, and people. The design responds to Chiang Mai’s cultural diversity, local lifestyles, and distinctive urban identity while creating inclusive spaces that can be shared by people of all ages and backgrounds. The project promotes walking, social interaction, accessibility, and a better quality of urban life.",
+
+
+      zh: "Saan Wiang：清迈宜步城市项目位于清迈塔佩路，以安全、便利、舒适的步行环境为核心，推动更具活力与包容性的城市公共空间。“Saan Wiang”概念重新定义人行道的角色，使其不再只是单纯的步行基础设施，而成为连接社区、建筑、活动与人群的“公共空间基础设施”。设计回应清迈多元的文化、生活方式与城市特色，并营造不同年龄、职业与社会背景的人都能平等使用的共享空间，从而促进步行、社区互动、城市可达性与生活品质。"
+    },
     featured: false,
   },
   //urban-planning 4
   {
     slug: "thap-thiang-design-and-development",
-    title: {
-      th: "ผังปลูกสวนสาธารณะริมน้ำ",
-      en: "Riverside Park Planting Plan",
-      zh: "滨水公园种植规划",
-    },
+    title: { th: "โครงการออกแบบและพัฒนาภูมิสถาปัตยกรรมชุมชนย่านการค้าเมืองเก่าทับเที่ยง", en: "Thap Thiang Old City Creative Community Design", zh: "塔天老城创意社区景观设计项目" },
     category: "urban-planning",
     tags: ["landscape", "urban"],
     coverImage: "/images/resort-chiangmai/01.webp",
     year: 2023,
-    location: {
-      th: "กรุงเทพฯ, ประเทศไทย",
-      en: "Bangkok, Thailand",
-      zh: "泰国曼谷",
-    },
-    role: {
-      th: "ผู้ช่วยออกแบบภูมิทัศน์",
-      en: "Landscape Design Assistant",
-      zh: "景观设计助理",
-    },
+    location: { th: "ทับเที่ยง จังหวัดตรัง ประเทศไทย", en: "Thap Thiang, Trang, Thailand", zh: "泰国 董里府 塔天" },
+    role: { th: "ออกแบบภูมิทัศน์ชุมชน วางผังพื้นที่ และฟื้นฟูย่านเมืองเก่า", en: "Community Landscape, Spatial Planning & Urban Regeneration", zh: "社区景观、空间规划与老城更新设计" },
     summary: {
-      th: "ผังปลูกพืชพรรณสำหรับสวนสาธารณะริมแม่น้ำ เน้นพันธุ์ไม้ท้องถิ่นที่ทนน้ำท่วมตามฤดูกาล",
-      en: "A planting plan for a riverside public park, favoring native species tolerant of seasonal flooding.",
-      zh: "为滨水公共公园制定的种植规划，优先选用耐季节性洪涝的本地物种。",
+      th: "โครงการออกแบบเพื่อฟื้นฟูย่านเมืองเก่าทับเที่ยง โดยผสานการอนุรักษ์อัตลักษณ์เดิมเข้ากับการออกแบบพื้นที่สร้างสรรค์ ผ่านแนวคิด “The Table” ที่เชื่อมโยงผู้คน กิจกรรม และพื้นที่เข้าด้วยกัน",
+      en: "Revitalizing Tubtieng Old Town through local identity, creative spaces, and the concept of “The Table.”",
+      zh: "本项目旨在通过设计 revitalization 塔布天老城区，将原有的地域特色与创意空间相结合。以“The Table”为设计理念，连接人与人、活动与空间，营造更具活力与意义的城市体验。",
     },
     description: {
-      th: "โครงการนี้ศึกษาพันธุ์ไม้ท้องถิ่นที่เหมาะกับพื้นที่ริมแม่น้ำที่มีน้ำท่วมตามฤดูกาล แล้วจัดทำผังปลูกที่แบ่งโซนตามระดับความชื้นของดิน เพื่อให้สวนสาธารณะดูแลรักษาง่ายในระยะยาวและยังคงร่มเงาให้ผู้ใช้งานได้ตลอดปี",
-      en: "This project researched native plant species suited to a riverside site with seasonal flooding, then produced a planting plan zoned by soil moisture level — keeping long-term maintenance low while providing shade for park visitors year-round.",
-      zh: "本项目研究了适合季节性洪涝滨水场地的本地植物物种，并据此制定按土壤湿度分区的种植规划——在保持长期低维护成本的同时，全年为公园游客提供遮荫。",
+      th: "โครงการพัฒนาย่านการค้าเมืองเก่าทับเที่ยงมุ่งฟื้นฟูพื้นที่ประวัติศาสตร์ควบคู่กับการส่งเสริมเศรษฐกิจสร้างสรรค์ โดยได้รับแรงบันดาลใจจากวัฒนธรรมร้านโกปีและแนวคิด “The Table” ซึ่งมองโต๊ะเป็นมากกว่าเฟอร์นิเจอร์ แต่เป็นพื้นที่แห่งการพบปะ การสื่อสาร และการสร้างสรรค์ร่วมกัน โครงการสำรวจและประเมินคุณค่าของอาคารเดิมเพื่อกำหนดแนวทางอนุรักษ์ ซ่อมแซม ปรับใช้ และฟื้นฟูให้เหมาะสมกับสภาพและคุณค่าทางประวัติศาสตร์ พื้นที่ถูกพัฒนาเป็น 3 โซนหลัก ได้แก่ “Work Table” บริเวณหอนาฬิกาและโรงแรมเก่า เพื่อสร้างชุมชนสร้างสรรค์และพื้นที่ทำงาน “Reception Table” บริเวณตลาดเทศบาล เพื่อฟื้นฟูต้นกำเนิดวัฒนธรรมโกปีและสร้างพื้นที่พบปะของชุมชน และ “Leisure Table” บริเวณคลองห้วยยาง เพื่อฟื้นฟูพื้นที่ริมน้ำด้วยระบบบำบัดน้ำ พืชบำบัด Rain Garden พื้นที่นั่งพัก และกิจกรรมสาธารณะ นอกจากนี้ยังเสนอแนวทางปรับปรุงด้านหน้าอาคารริมคลองโดยอาศัยความร่วมมือโดยสมัครใจระหว่างเจ้าของอาคาร ภาครัฐ และชุมชน เพื่อยกระดับภูมิทัศน์ อัตลักษณ์ และคุณค่าทางวัฒนธรรมของย่านอย่างยั่งยืน",
+
+      en: "The Thap Thiang Old City Creative Community project revitalizes the historic commercial district while supporting the creative economy. Inspired by local Kopi coffee-shop culture, the concept of “The Table” transforms everyday gathering spaces into platforms for communication, collaboration, and creative exchange. Existing buildings were surveyed and assessed to establish appropriate strategies for preservation, repair, adaptive reuse, and structural rehabilitation according to their condition and cultural value. The project is organized into three key zones: the “Work Table” around the clock tower and an old hotel, reimagined as a creative community and workspace; the “Reception Table” at the municipal market, strengthening its role as the origin of local Kopi culture and a social-commercial hub; and the “Leisure Table” along Huai Yang Canal, where water treatment, rain gardens, shaded seating, and small activity spaces help reconnect people with the historic waterfront. Voluntary façade improvement guidelines are also proposed to encourage collaboration between property owners, government agencies, and the community while strengthening the area's cultural identity and urban character.",
+
+
+      zh: "塔天老城创意社区项目旨在通过历史街区更新与创意经济发展，重新激活传统商业社区。设计灵感来源于当地“Kopi”咖啡店文化，并以“The Table（桌子）”为核心概念，将桌子视为交流、聚会、协作与创意活动发生的平台。项目首先对现有建筑进行调查与价值评估，并根据建筑状况及历史文化价值提出保护、修缮、适应性改造及结构修复等不同策略。整体规划分为三个主要区域：“Work Table（工作之桌）”位于钟楼及老酒店周边，将其转化为创意社区与工作空间；“Reception Table（迎宾之桌）”位于市政市场，通过更新商业、停车及公共交流空间，强化当地Kopi文化与社区生活；“Leisure Table（休闲之桌）”位于Huai Yang运河沿岸，通过水处理系统、生态植物、雨水花园、遮荫座椅及活动空间恢复滨水公共生活。项目同时提出自愿参与的沿河建筑立面改善方案，鼓励业主、政府与社区共同参与，以提升老城的景观品质、文化价值与地方认同。"
     },
-    featured: false,
+    featured: true,
   },
   //urban-planning 5
   {
     slug: "three-kings-monument-square",
-    title: {
-      th: "ผังปลูกสวนสาธารณะริมน้ำ",
-      en: "Riverside Park Planting Plan",
-      zh: "滨水公园种植规划",
-    },
+    title: { th: "โครงการออกแบบ Ripple of Space ลานอนุสาวรีย์สามกษัตริย์", en: "Ripple of Space: Three Kings Plaza", zh: "Ripple of Space：三王纪念广场设计项目" },
     category: "urban-planning",
     tags: ["landscape", "urban"],
     coverImage: "/images/resort-chiangmai/01.webp",
     year: 2023,
-    location: {
-      th: "กรุงเทพฯ, ประเทศไทย",
-      en: "Bangkok, Thailand",
-      zh: "泰国曼谷",
-    },
-    role: {
-      th: "ผู้ช่วยออกแบบภูมิทัศน์",
-      en: "Landscape Design Assistant",
-      zh: "景观设计助理",
-    },
+    location: { th: "เชียงใหม่, ประเทศไทย", en: "Chiang Mai, Thailand", zh: "泰国 清迈" },
+    role: { th: "ออกแบบพื้นที่สาธารณะและภูมิทัศน์เมือง", en: "Public Space & Urban Landscape Design", zh: "公共空间与城市景观设计" },
     summary: {
-      th: "ผังปลูกพืชพรรณสำหรับสวนสาธารณะริมแม่น้ำ เน้นพันธุ์ไม้ท้องถิ่นที่ทนน้ำท่วมตามฤดูกาล",
-      en: "A planting plan for a riverside public park, favoring native species tolerant of seasonal flooding.",
-      zh: "为滨水公共公园制定的种植规划，优先选用耐季节性洪涝的本地物种。",
+      th: "",
+      en: "",
+      zh: "",
     },
     description: {
-      th: "โครงการนี้ศึกษาพันธุ์ไม้ท้องถิ่นที่เหมาะกับพื้นที่ริมแม่น้ำที่มีน้ำท่วมตามฤดูกาล แล้วจัดทำผังปลูกที่แบ่งโซนตามระดับความชื้นของดิน เพื่อให้สวนสาธารณะดูแลรักษาง่ายในระยะยาวและยังคงร่มเงาให้ผู้ใช้งานได้ตลอดปี",
-      en: "This project researched native plant species suited to a riverside site with seasonal flooding, then produced a planting plan zoned by soil moisture level — keeping long-term maintenance low while providing shade for park visitors year-round.",
-      zh: "本项目研究了适合季节性洪涝滨水场地的本地植物物种，并据此制定按土壤湿度分区的种植规划——在保持长期低维护成本的同时，全年为公园游客提供遮荫。",
+      th: "Ripple of Space เป็นโครงการพัฒนาลานอนุสาวรีย์สามกษัตริย์ให้เป็นพื้นที่สาธารณะร่วมสมัยและเป็นจุดเชื่อมกิจกรรมของเมือง โดยออกแบบให้เชื่อมพื้นที่สองฝั่งของถนนเข้าด้วยกัน และตอบสนองต่อพฤติกรรมการใช้งานของผู้คนผ่านทางเดินโค้ง พื้นที่นั่งพัก ลำดับมุมมอง และองค์ประกอบภูมิทัศน์ พืชพรรณ น้ำ แสงสว่าง และพื้นผิวถูกใช้เพื่อสร้างความต่อเนื่อง ความร่มรื่น และความยืดหยุ่นในการใช้งาน พร้อมกระจายกิจกรรมจากลานสาธารณะออกสู่บริบทเมืองโดยรอบ",
+
+      en: "Ripple of Space reimagines the Three Kings Plaza as a contemporary public space and active urban node in the center of Chiang Mai. The design connects both sides of the site across the road and responds to user behavior through curved pathways, distributed seating, view sequences, and layered landscape elements. Plants, water, lighting, and permeable surfaces are integrated to create comfort, continuity, flexibility, and a ripple effect that extends public activity into the surrounding city fabric.",
+
+
+      zh: "Ripple of Space 项目将清迈三王纪念广场重新塑造为现代公共空间与城市活动节点。设计通过连接道路两侧空间，并结合曲线路径、分散式座位、视线序列及层次化景观元素，回应人们的日常使用行为。植物、水景、灯光与透水铺面共同营造舒适、连续且灵活的空间体验，并将公共活动进一步延伸至周边城市环境。"
     },
     featured: false,
   },

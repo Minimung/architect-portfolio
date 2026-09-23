@@ -1,13 +1,13 @@
 export const site = {
   name: "",
   tagline: {
-    th: "สถาปนิก / นักออกแบบพื้นที่",
-    en: "Architect / Spatial Designer",
-    zh: "建筑师 / 空间设计师",
+    th: "ภูมิสถาปนิก / สถาปนิกผังเมือง / นักออกแบบเมือง",
+    en: "Landscape Architect / Urban Architect",
+    zh: "景观设计师 / 景观建筑师 / 城市设计师 / 城市建筑师",
   },
   heroStatement: {
-    th: "portfolio",
-    en: "portfolio",
+    th: "Portfolio",
+    en: "Portfolio",
     zh: "作品集",
   },
   heroCredit: {
@@ -15,9 +15,9 @@ export const site = {
     affiliation: "MJU",
   },
   aboutIntro: {
-    th: "ผมเป็นสถาปนิกที่เชื่อว่างานออกแบบที่ดีเริ่มจากการฟังโจทย์และพื้นที่อย่างละเอียด ก่อนจะแปลงเป็นรูปทรงและพื้นที่ใช้สอยที่ตอบโจทย์ทั้งฟังก์ชันและความรู้สึก",
-    en: "I believe good design starts with carefully listening to the brief and the site before translating them into form and space that serve both function and feeling.",
-    zh: "我相信好的设计始于用心倾听设计需求与场地本身，再将其转化为兼顾功能与情感的形态与空间。",
+    th: "เราหลงใหลในงานออกแบบและสนุกกับการสำรวจไอเดียผ่านพื้นที่ รูปแบบ และการนำเสนอทางภาพ เราชอบเปลี่ยนความคิดสร้างสรรค์ให้กลายเป็นพื้นที่และประสบการณ์ที่มีความหมายและสะท้อนความเป็นตัวเอง",
+    en: "I’m passionate about design and love exploring ideas through space, form, and visual expression. I enjoy turning creative ideas into spaces and experiences that feel meaningful and personal.",
+    zh: "我热爱设计，也喜欢通过空间、形式和视觉表达去探索不同的想法。我享受将创意转化为空间与体验，让每一个设计都具有意义，并展现独特的个人感受。",
   },
   aboutPhilosophy: {
     th: "แนวทางการทำงานเน้นความเรียบง่าย วัสดุที่ซื่อตรง และรายละเอียดที่ผ่านการคิดมาอย่างรอบคอบ",
@@ -26,9 +26,9 @@ export const site = {
   },
   education: [
     {
-      th: "ปริญญาตรีสถาปัตยกรรมศาสตร์, มหาวิทยาลัยตัวอย่าง",
-      en: "B.Arch, Example University",
-      zh: "建筑学学士，示范大学",
+      th: "ปริญญาตรีสถาปัตยกรรมศาสตร์, มหาวิทยาลัยแม่โจ้",
+      en: "Bachelor’s Degree in Landscape Architecture, Maejo University",
+      zh: "景观建筑学学士学位，泰国梅州大学",
     },
   ],
   experience: [

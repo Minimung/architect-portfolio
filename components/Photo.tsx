@@ -21,6 +21,7 @@ export default function Photo({
         fill
         sizes={sizes}
         priority={priority}
+        loading="eager"
         className="object-cover"
       />
     </div>

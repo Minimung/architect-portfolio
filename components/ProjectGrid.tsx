@@ -41,7 +41,7 @@ export default function ProjectGrid({
 
   return (
     <div>
-      <h1 className="mb-10 font-serif text-3xl sm:text-4xl">{heading}</h1>
+      <h1 className="mb-10 font-serif text-lg sm:text-2xl">{heading}</h1>
       <div className="mb-8 flex flex-wrap gap-2 text-sm">
         <button
           type="button"
