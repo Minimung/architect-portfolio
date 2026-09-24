@@ -18,6 +18,9 @@ export interface Project {
   category: ProjectCategory;
   tags: ProjectTag[];
   coverImage?: string;
+  // Shown on the homepage hero in place of coverImage on hover, and auto-alternated
+  // with coverImage every few seconds while that slide is active and not hovered.
+  hoverImage?: string;
   gallery?: string[];
   year: number;
   location: { th: string; en: string; zh: string };
@@ -56,7 +59,7 @@ export const categoryLabels: Record<
 // Optional cover photo per category, shown on the Home page category grid.
 // Leave a category out (or set it to undefined) to keep the flat color block.
 export const categoryImages: Partial<Record<ProjectCategory, string>> = {
-  "landscape-intern": "/images/resort-chiangmai/01.webp",
+  "landscape-intern": "/images/shanxi-huangcheng-xiangfu/01.png",
 };
 
 export const tagLabels: Record<ProjectTag, { th: string; en: string; zh: string }> = {
@@ -117,7 +120,11 @@ export const projects: Project[] = [
     },
     category: "landscape-intern",
     tags: ["architecture", "landscape", "projects"],
-    coverImage: "/images/resort-chiangmai/01.webp",
+    coverImage: "/images/bu-tiange-winery/16.jpg",
+    gallery: [
+      "/images/bu-tiange-winery/2.jpg",
+      "/images/bu-tiange-winery/3.jpg",
+    ],
     year: 2024,
     location: {
       th: "เทือกเขาเฮ่อหลาน, หนิงเซี่ย, ประเทศจีน",
@@ -151,13 +158,13 @@ export const projects: Project[] = [
     },
     category: "landscape-planning",
     tags: ["architecture", "landscape", "projects"],
-    coverImage: "/images/resort-chiangmai/01.webp",
+    coverImage: "/images/resort-chiangmai/04.webp",
     year: 2024,
     location: { th: "เชียงใหม่, ประเทศไทย", en: "Chiang Mai, Thailand", zh: "泰国 清迈" },
     role: { th: "ออกแบบภูมิทัศน์และวางผัง", en: "Landscape Design & Planning", zh: "景观设计与规划" },
     gallery: [
-      "/images/shanxi-huangcheng-xiangfu/01.webp",
-      "/images/shanxi-huangcheng-xiangfu/01.webp",
+      "/images/resort-chiangmai/03.webp",
+      "/images/resort-chiangmai/02.webp",
     ],
     summary: {
       th: "แรงบันดาลใจจากดอกเสี้ยวและ “เวียง” ผสานธรรมชาติและวัฒนธรรมล้านนาผ่านภูมิทัศน์ที่เปลี่ยนแปลงตามฤดูกาล",
@@ -177,7 +184,11 @@ export const projects: Project[] = [
     title: { th: "โครงการออกแบบวัดพระธาตุดอยสะเก็ด", en: "Wat Phra That Doi Saket Design", zh: "帕塔多伊萨克寺设计项目" },
     category: "landscape-planning",
     tags: ["architecture", "landscape", "projects"],
-    coverImage: "/images/resort-chiangmai/01.webp",
+    coverImage: "/images/wat-phra-that-doi-saket/01.webp",
+    gallery: [
+      "/images/wat-phra-that-doi-saket/02.webp",
+      "/images/wat-phra-that-doi-saket/03.webp",
+    ],
     year: 2021,
     location: { th: "ดอยสะเก็ด, เชียงใหม่, ประเทศไทย", en: "Doi Saket, Chiang Mai, Thailand", zh: "泰国, 清迈府, 多伊萨克" },
     role: { th: "ออกแบบโซนตลาดโยนกและพืชพรรณ", en: "Yonok Market Zone & Planting Design", zh: "约诺克市场区域与植物设计" },
@@ -203,7 +214,11 @@ export const projects: Project[] = [
     },
     category: "landscape-planning",
     tags: ["architecture", "landscape", "projects"],
-    coverImage: "/images/resort-chiangmai/01.webp",
+    coverImage: "/images/nation-forest-park/03.webp",
+    gallery: [
+      "/images/nation-forest-park/01.webp",
+      "/images/nation-forest-park/02.webp",
+    ],
     year: 2021,
     location: { th: "อำเภอเมืองแพร่ จังหวัดแพร่ ประเทศไทย", en: "Mueang Phrae, Phrae, Thailand", zh: "泰国, 帕府, 帕府市" },
     role: { th: "ออกแบบภูมิทัศน์ วางผังพื้นที่ และพืชพรรณ", en: "Landscape Planning & Planting Design", zh: "景观规划与植物设计" },
@@ -229,7 +244,11 @@ export const projects: Project[] = [
     },
     category: "landscape-planning",
     tags: ["architecture", "landscape", "projects"],
-    coverImage: "/images/resort-chiangmai/01.webp",
+    coverImage: "/images/gpo-botanic-garden/03.webp",
+    gallery: [
+      "/images/gpo-botanic-garden/01.webp",
+      "/images/gpo-botanic-garden/02.webp",
+    ],
     year: 2021,
     location: { th: "ชลบุรี, ประเทศไทย", en: "Chonburi, Thailand", zh: "泰国, 春武里府" },
     role: { th: "ออกแบบภูมิทัศน์ วางผังพื้นที่ และออกแบบพืชพรรณ", en: "Landscape Planning & Planting Design", zh: "景观规划与植物设计" },
@@ -251,7 +270,12 @@ export const projects: Project[] = [
     title: { th: "โครงการออกแบบพื้นที่สาธารณะใต้ทางด่วนเลียบด่วน", en: "Green (Liab Duan) Expressway Public Space", zh: "曼谷沿高速公路桥下公共空间设计项目" },
     category: "urban-planning",
     tags: ["landscape", "urban"],
-    coverImage: "/images/resort-chiangmai/01.webp",
+    coverImage: "/images/green-liab-duan-public-space/01.webp",
+    gallery: [
+      "/images/green-liab-duan-public-space/02.webp",
+      "/images/green-liab-duan-public-space/03.webp",
+    ],
+    
     year: 2023,
     location: { th: "กรุงเทพมหานคร, ประเทศไทย", en: "Bangkok, Thailand", zh: "泰国, 曼谷" },
     role: { th: "ออกแบบพื้นที่สาธารณะ ภูมิทัศน์ และวางผังพื้นที่", en: "Public Space, Landscape & Spatial Planning", zh: "公共空间、景观与空间规划设计" },
@@ -301,7 +325,7 @@ export const projects: Project[] = [
     category: "urban-planning",
     tags: ["landscape", "urban"],
     coverImage: "/images/resort-chiangmai/01.webp",
-    year: 2023,
+    year: 2026,
     location: { th: "เชียงใหม่, ประเทศไทย", en: "Chiang Mai, Thailand", zh: "泰国 清迈" },
     role: { th: "ออกแบบพื้นที่สาธารณะ ทางเดินเท้า และภูมิทัศน์เมือง", en: "Public Space, Pedestrian & Urban Landscape Design", zh: "公共空间、步行系统与城市景观设计" },
     summary: {
@@ -326,7 +350,23 @@ export const projects: Project[] = [
     title: { th: "โครงการออกแบบและพัฒนาภูมิสถาปัตยกรรมชุมชนย่านการค้าเมืองเก่าทับเที่ยง", en: "Thap Thiang Old City Creative Community Design", zh: "塔天老城创意社区景观设计项目" },
     category: "urban-planning",
     tags: ["landscape", "urban"],
-    coverImage: "/images/resort-chiangmai/01.webp",
+    coverImage: "/images/thap-thiang-design-and-development/01.jpg",
+    hoverImage: "/images/thap-thiang-design-and-development/02.jpg",
+    gallery: ["/images/thap-thiang-design-and-development/video01.mp4",
+      "/images/thap-thiang-design-and-development/03.tiff",
+      "/images/thap-thiang-design-and-development/04.tiff",
+      "/images/thap-thiang-design-and-development/05.tiff",
+      "/images/thap-thiang-design-and-development/06.tiff",
+      "/images/thap-thiang-design-and-development/11.webp",
+      "/images/thap-thiang-design-and-development/07.webp",
+      "/images/thap-thiang-design-and-development/08.webp",
+      "/images/thap-thiang-design-and-development/09.webp",
+      "/images/thap-thiang-design-and-development/10.webp",
+
+
+
+
+    ],
     year: 2023,
     location: { th: "ทับเที่ยง จังหวัดตรัง ประเทศไทย", en: "Thap Thiang, Trang, Thailand", zh: "泰国 董里府 塔天" },
     role: { th: "ออกแบบภูมิทัศน์ชุมชน วางผังพื้นที่ และฟื้นฟูย่านเมืองเก่า", en: "Community Landscape, Spatial Planning & Urban Regeneration", zh: "社区景观、空间规划与老城更新设计" },

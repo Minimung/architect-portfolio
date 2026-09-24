@@ -3,8 +3,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link, routing, type Locale } from "@/i18n/routing";
 import { categoryLabels, getProjectBySlug, projects } from "@/content/projects";
 import ProjectImage from "@/components/ProjectImage";
-import PlaceholderImage from "@/components/PlaceholderImage";
-import Photo from "@/components/Photo";
+import AlternatingCoverImage from "@/components/AlternatingCoverImage";
+import ProjectGallery from "@/components/ProjectGallery";
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
@@ -38,13 +38,24 @@ export default async function ProjectDetailPage({
         {project.title[loc]}
       </h1>
 
-      <ProjectImage
-        project={project}
-        label={project.title[loc]}
-        className="mb-10 aspect-[16/9] w-full"
-        sizes="(min-width: 1024px) 896px, 100vw"
-        priority
-      />
+      {project.coverImage && project.hoverImage ? (
+        <AlternatingCoverImage
+          src={project.coverImage}
+          altSrc={project.hoverImage}
+          alt={project.title[loc]}
+          className="mb-10 aspect-[16/9] w-full"
+          sizes="(min-width: 1024px) 896px, 100vw"
+          priority
+        />
+      ) : (
+        <ProjectImage
+          project={project}
+          label={project.title[loc]}
+          className="mb-10 aspect-[16/9] w-full"
+          sizes="(min-width: 1024px) 896px, 100vw"
+          priority
+        />
+      )}
 
       <dl className="mb-10 grid grid-cols-2 gap-6 border-y border-neutral-200 py-6 text-sm sm:grid-cols-4">
         <div>
@@ -69,26 +80,7 @@ export default async function ProjectDetailPage({
         {project.description[loc]}
       </p>
 
-      <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
-        {project.gallery && project.gallery.length > 0
-          ? project.gallery.map((src, i) => (
-              <Photo
-                key={`${i}-${src}`}
-                src={src}
-                alt={`${project.title[loc]} — ${i + 2}`}
-                className="aspect-[4/3]"
-                sizes="(min-width: 640px) 50vw, 100vw"
-              />
-            ))
-          : [1, 2].map((n) => (
-              <PlaceholderImage
-                key={n}
-                label={`${project.title[loc]} — 0${n + 1}`}
-                className="aspect-[4/3]"
-                index={n}
-              />
-            ))}
-      </div>
+      <ProjectGallery images={project.gallery ?? []} alt={project.title[loc]} />
     </div>
   );
 }

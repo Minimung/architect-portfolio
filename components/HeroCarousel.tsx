@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, type Locale } from "@/i18n/routing";
 import type { Project } from "@/content/projects";
@@ -12,6 +13,75 @@ function getSlideOffset(i: number, activeIndex: number, total: number) {
     return 0;
   }
   return ((i - activeIndex + total + 1) % total) - 1;
+}
+
+function HeroSlideImage({
+  project,
+  locale,
+  priority,
+}: {
+  project: Project;
+  locale: Locale;
+  priority: boolean;
+}) {
+  const [hovered, setHovered] = useState(false);
+  const [showHoverImage, setShowHoverImage] = useState(false);
+  const hasHoverSwap = Boolean(project.coverImage && project.hoverImage);
+
+  useEffect(() => {
+    if (hovered || !hasHoverSwap) {
+      return;
+    }
+    const id = setInterval(() => {
+      setShowHoverImage((v) => !v);
+    }, 3000);
+    return () => clearInterval(id);
+  }, [hovered, hasHoverSwap]);
+
+  if (!hasHoverSwap) {
+    return (
+      <ProjectImage
+        project={project}
+        label={project.title[locale]}
+        className="h-full w-full"
+        priority={priority}
+      />
+    );
+  }
+
+  return (
+    <div
+      className="relative h-full w-full"
+      onMouseEnter={() => {
+        setHovered(true);
+        setShowHoverImage(true);
+      }}
+      onMouseLeave={() => {
+        setHovered(false);
+        setShowHoverImage(false);
+      }}
+    >
+      <Image
+        src={project.coverImage!}
+        alt={project.title[locale]}
+        fill
+        sizes="100vw"
+        priority={priority}
+        className={`object-cover transition-opacity duration-700 ease-in-out ${
+          showHoverImage ? "opacity-0" : "opacity-100"
+        }`}
+      />
+      <Image
+        src={project.hoverImage!}
+        alt={project.title[locale]}
+        fill
+        sizes="100vw"
+        className={`object-cover transition-opacity duration-700 ease-in-out ${
+          showHoverImage ? "opacity-100" : "opacity-0"
+        }`}
+      />
+    </div>
+  );
 }
 
 export default function HeroCarousel({ projects }: { projects: Project[] }) {
@@ -56,11 +126,9 @@ export default function HeroCarousel({ projects }: { projects: Project[] }) {
             }`}
             style={{ transform: `translateX(${offset * 100}%)` }}
           >
-            <ProjectImage
+            <HeroSlideImage
               project={project}
-              label={project.title[locale]}
-              index={i}
-              className="h-full w-full"
+              locale={locale}
               priority={i === 0}
             />
           </div>
