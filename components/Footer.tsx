@@ -52,24 +52,30 @@ export default function Footer() {
               {site.contact.email}
             </a>
             <span>{site.contact.phone}</span>
-            <div className="mt-1 flex gap-4">
-              <a
-                href={site.contact.instagram}
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-neutral-950"
-              >
-                Instagram
-              </a>
-              <a
-                href={site.contact.line}
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-neutral-950"
-              >
-                LINE
-              </a>
-            </div>
+            {(site.contact.instagram || site.contact.line) && (
+              <div className="mt-1 flex gap-4">
+                {site.contact.instagram && (
+                  <a
+                    href={site.contact.instagram}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-neutral-950"
+                  >
+                    Instagram
+                  </a>
+                )}
+                {site.contact.line && (
+                  <a
+                    href={site.contact.line}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-neutral-950"
+                  >
+                    LINE
+                  </a>
+                )}
+              </div>
+            )}
           </div>
         </div>
       </div>

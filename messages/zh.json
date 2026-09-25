@@ -25,11 +25,14 @@
     "heading": "关于",
     "philosophyHeading": "设计理念",
     "educationHeading": "学历",
-    "experienceHeading": "工作经历"
+    "experienceHeading": "工作经历",
+    "portfolioHeading": "作品集 - 查看更多详情",
+    "cvHeading": "简历",
+    "cvOpen": "打开"
   },
   "contact": {
     "heading": "联系",
-    "intro": "有兴趣合作或有项目想法？欢迎直接联系。",
+    "intro": "期待专业合作、设计项目与合作机会。如果您正在寻找设计师参与项目，我很乐意进一步交流合作方式与项目需求。",
     "email": "邮箱",
     "phone": "电话",
     "social": "社交媒体"

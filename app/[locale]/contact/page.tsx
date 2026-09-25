@@ -31,27 +31,33 @@ export default async function ContactPage({
           <dt className="text-neutral-500">{t("phone")}</dt>
           <dd className="text-lg text-neutral-900">{site.contact.phone}</dd>
         </div>
-        <div>
-          <dt className="text-neutral-500">{t("social")}</dt>
-          <dd className="flex gap-4 text-lg">
-            <a
-              href={site.contact.instagram}
-              target="_blank"
-              rel="noreferrer"
-              className="text-neutral-900 underline underline-offset-4"
-            >
-              Instagram
-            </a>
-            <a
-              href={site.contact.line}
-              target="_blank"
-              rel="noreferrer"
-              className="text-neutral-900 underline underline-offset-4"
-            >
-              LINE
-            </a>
-          </dd>
-        </div>
+        {(site.contact.instagram || site.contact.line) && (
+          <div>
+            <dt className="text-neutral-500">{t("social")}</dt>
+            <dd className="flex gap-4 text-lg">
+              {site.contact.instagram && (
+                <a
+                  href={site.contact.instagram}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-neutral-900 underline underline-offset-4"
+                >
+                  Instagram
+                </a>
+              )}
+              {site.contact.line && (
+                <a
+                  href={site.contact.line}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-neutral-900 underline underline-offset-4"
+                >
+                  LINE
+                </a>
+              )}
+            </dd>
+          </div>
+        )}
       </dl>
     </div>
   );

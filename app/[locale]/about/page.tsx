@@ -41,6 +41,27 @@ export default async function AboutPage({
           <li key={i}>{item[loc]}</li>
         ))}
       </ul>
+
+      <h2 className="mb-3 mt-12 font-serif text-xl">
+        <a
+          href={site.portfolioUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="hover:underline"
+        >
+          {t("portfolioHeading")} ↗
+        </a>
+      </h2>
+
+      <h2 className="mb-3 mt-12 font-serif text-xl">{t("cvHeading")}</h2>
+      <a
+        href={site.cvUrl}
+        target="_blank"
+        rel="noreferrer"
+        className="inline-block rounded-full border border-neutral-900 px-5 py-2 text-sm transition-colors hover:bg-neutral-900 hover:text-white"
+      >
+        {t("cvOpen")}
+      </a>
     </div>
   );
 }

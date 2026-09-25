@@ -60,6 +60,9 @@ export const categoryLabels: Record<
 // Leave a category out (or set it to undefined) to keep the flat color block.
 export const categoryImages: Partial<Record<ProjectCategory, string>> = {
   "landscape-intern": "/images/shanxi-huangcheng-xiangfu/01.png",
+  "landscape-planning": "/images/gpo-botanic-garden/03.webp",
+  "urban-planning": "/images/three-kings-monument-square/01.png",
+  "construction-drawing": "/images/landscape-constryction-drawing-water-feature/06.png",
 };
 
 export const tagLabels: Record<ProjectTag, { th: string; en: string; zh: string }> = {
@@ -297,7 +300,11 @@ export const projects: Project[] = [
     title: { th: "โครงการออกแบบ Bangkok 2023: สวนสาธารณะแห่งอนาคต", en: "Bangkok 2023: Park of the Future", zh: "曼谷2023：未来公园设计项目" },
     category: "urban-planning",
     tags: ["landscape", "urban"],
-    coverImage: "/images/resort-chiangmai/01.webp",
+    coverImage: "/images/bangkok-park-of-the-future/01.png",
+    gallery: [
+      "/images/bangkok-park-of-the-future/02.png",
+      "/images/bangkok-park-of-the-future/03.png",
+    ],
     year: 2023,
     location: {
       th: "กรุงเทพฯ, ประเทศไทย",
@@ -324,7 +331,11 @@ export const projects: Project[] = [
     title: { th: "โครงการออกแบบ Saan Wiang: Good Walk Chiang Mai Walkable City", en: "Saan Wiang: Good Walk Chiang Mai Walkable City", zh: "Saan Wiang：清迈宜步城市设计项目" },
     category: "urban-planning",
     tags: ["landscape", "urban"],
-    coverImage: "/images/resort-chiangmai/01.webp",
+    coverImage: "/images/saan-wiang-chiang-mai-walkable-city/50.jpg",
+    gallery: [
+      "/images/saan-wiang-chiang-mai-walkable-city/51.jpg",
+      "/images/saan-wiang-chiang-mai-walkable-city/52.jpg",
+    ],
     year: 2026,
     location: { th: "เชียงใหม่, ประเทศไทย", en: "Chiang Mai, Thailand", zh: "泰国 清迈" },
     role: { th: "ออกแบบพื้นที่สาธารณะ ทางเดินเท้า และภูมิทัศน์เมือง", en: "Public Space, Pedestrian & Urban Landscape Design", zh: "公共空间、步行系统与城市景观设计" },
@@ -391,7 +402,11 @@ export const projects: Project[] = [
     title: { th: "โครงการออกแบบ Ripple of Space ลานอนุสาวรีย์สามกษัตริย์", en: "Ripple of Space: Three Kings Plaza", zh: "Ripple of Space：三王纪念广场设计项目" },
     category: "urban-planning",
     tags: ["landscape", "urban"],
-    coverImage: "/images/resort-chiangmai/01.webp",
+    coverImage: "/images/three-kings-monument-square/01.png",
+    gallery: [
+      "/images/three-kings-monument-square/02.png",
+      "/images/three-kings-monument-square/03.png",
+    ],
     year: 2023,
     location: { th: "เชียงใหม่, ประเทศไทย", en: "Chiang Mai, Thailand", zh: "泰国 清迈" },
     role: { th: "ออกแบบพื้นที่สาธารณะและภูมิทัศน์เมือง", en: "Public Space & Urban Landscape Design", zh: "公共空间与城市景观设计" },
@@ -420,7 +435,18 @@ export const projects: Project[] = [
     },
     category: "construction-drawing",
     tags: ["construction", "architecture"],
-    coverImage: "/images/resort-chiangmai/01.webp",
+    coverImage: "/images/landscape-constryction-drawing-water-feature/06.png",
+    gallery: [
+      "/images/landscape-constryction-drawing-water-feature/01.png",
+      "/images/landscape-constryction-drawing-water-feature/02.png",
+      "/images/landscape-constryction-drawing-water-feature/03.png",
+      "/images/landscape-constryction-drawing-water-feature/04.png",
+      "/images/landscape-constryction-drawing-water-feature/05.png",
+      "/images/landscape-constryction-drawing-water-feature/06.png",
+      "/images/landscape-constryction-drawing-water-feature/07.png",
+      "/images/landscape-constryction-drawing-water-feature/08.png",
+      "/images/landscape-constryction-drawing-water-feature/09.png",
+    ],
     year: 2024,
     location: {
       th: "เชียงใหม่, ประเทศไทย",
@@ -454,7 +480,22 @@ export const projects: Project[] = [
     },
     category: "construction-drawing",
     tags: ["construction", "architecture"],
-    coverImage: "/images/resort-chiangmai/01.webp",
+    coverImage: "/images/drawing-home-landscape-design/01.png",
+     gallery: [
+      
+      "/images/drawing-home-landscape-design/02.png",
+      "/images/drawing-home-landscape-design/03.png",
+      "/images/drawing-home-landscape-design/04.png",
+      "/images/drawing-home-landscape-design/05.png",
+      "/images/drawing-home-landscape-design/06.png",
+      "/images/drawing-home-landscape-design/07.png",
+      "/images/drawing-home-landscape-design/08.png",
+      "/images/drawing-home-landscape-design/09.png",
+      "/images/drawing-home-landscape-design/10.png",
+      "/images/drawing-home-landscape-design/11.png",
+
+    
+    ],
     year: 2024,
     location: {
       th: "เชียงใหม่, ประเทศไทย",

@@ -25,11 +25,14 @@
     "heading": "About",
     "philosophyHeading": "Philosophy",
     "educationHeading": "Education",
-    "experienceHeading": "Experience"
+    "experienceHeading": "Experience",
+    "portfolioHeading": "Portfolio - View more details",
+    "cvHeading": "CV",
+    "cvOpen": "Open"
   },
   "contact": {
     "heading": "Contact",
-    "intro": "Interested in working together or have a project in mind? Reach out directly.",
+    "intro": "Available for professional opportunities, design projects, and collaborations. If you are looking for a designer to contribute to your project, I would be glad to discuss how we can work together.",
     "email": "Email",
     "phone": "Phone",
     "social": "Social"

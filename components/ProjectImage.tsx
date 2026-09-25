@@ -9,6 +9,7 @@ export default function ProjectImage({
   className = "",
   sizes = "100vw",
   priority = false,
+  showCredit = true,
 }: {
   project: Project;
   label: string;
@@ -16,6 +17,7 @@ export default function ProjectImage({
   className?: string;
   sizes?: string;
   priority?: boolean;
+  showCredit?: boolean;
 }) {
   if (!project.coverImage) {
     return <PlaceholderImage label={label} index={index} className={className} />;
@@ -28,6 +30,7 @@ export default function ProjectImage({
       className={className}
       sizes={sizes}
       priority={priority}
+      showCredit={showCredit}
     />
   );
 }

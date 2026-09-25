@@ -45,6 +45,7 @@ function HeroSlideImage({
         label={project.title[locale]}
         className="h-full w-full"
         priority={priority}
+        showCredit={false}
       />
     );
   }
@@ -112,7 +113,7 @@ export default function HeroCarousel({ projects }: { projects: Project[] }) {
 
   return (
     <section
-      className="relative h-screen w-full overflow-hidden"
+      className="relative h-[100svh] w-full overflow-hidden"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >

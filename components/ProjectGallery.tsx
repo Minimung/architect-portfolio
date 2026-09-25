@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Photo from "./Photo";
 import PlaceholderImage from "./PlaceholderImage";
+import { site } from "@/content/site";
 
 function isVideo(src: string) {
   return /\.(mp4|webm|mov)$/i.test(src);
@@ -183,13 +184,20 @@ export default function ProjectGallery({
                 className="h-full w-full object-contain"
               />
             ) : (
-              <Image
-                src={activeSrc}
-                alt={`${alt} — ${openIndex + 2}`}
-                fill
-                sizes="100vw"
-                className="object-contain"
-              />
+              <>
+                <Image
+                  src={activeSrc}
+                  alt={`${alt} — ${openIndex + 2}`}
+                  fill
+                  sizes="100vw"
+                  className="object-contain"
+                />
+                <div className="pointer-events-none absolute bottom-2 right-2 rounded bg-black/40 px-1.5 py-0.5 text-right text-[10px] leading-tight text-white sm:bottom-3 sm:right-3 sm:text-xs">
+                  {site.heroCredit.name}
+                  <br />
+                  {site.heroCredit.affiliation}
+                </div>
+              </>
             )}
           </div>
         </div>
