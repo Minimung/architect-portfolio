@@ -364,15 +364,17 @@ export const projects: Project[] = [
     coverImage: "/images/thap-thiang-design-and-development/01.jpg",
     hoverImage: "/images/thap-thiang-design-and-development/02.jpg",
     gallery: ["/images/thap-thiang-design-and-development/video01.mp4",
+      "/images/thap-thiang-design-and-development/10.webp",
+      "/images/thap-thiang-design-and-development/07.webp",
       "/images/thap-thiang-design-and-development/03.tiff",
+      "/images/thap-thiang-design-and-development/09.webp",
+      "/images/thap-thiang-design-and-development/08.webp",
       "/images/thap-thiang-design-and-development/04.tiff",
       "/images/thap-thiang-design-and-development/05.tiff",
       "/images/thap-thiang-design-and-development/06.tiff",
       "/images/thap-thiang-design-and-development/11.webp",
-      "/images/thap-thiang-design-and-development/07.webp",
-      "/images/thap-thiang-design-and-development/08.webp",
-      "/images/thap-thiang-design-and-development/09.webp",
-      "/images/thap-thiang-design-and-development/10.webp",
+      
+      
 
 
 

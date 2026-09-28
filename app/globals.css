@@ -38,3 +38,18 @@ img,
 video {
   -webkit-user-drag: none;
 }
+
+@keyframes intro-cursor-blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.intro-cursor {
+  animation: intro-cursor-blink 1s step-end infinite;
+}

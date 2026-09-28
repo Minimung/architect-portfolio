@@ -8,6 +8,7 @@ import { site } from "@/content/site";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ImageProtection from "@/components/ImageProtection";
+import IntroLoader from "@/components/IntroLoader";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -26,7 +27,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: site.name ? `${site.name} — Architect` : "Portfolio DuangphornW",
+  title: site.name ? `${site.name} — Architect` : "Portfolio Duangphorn",
   description: "Architecture portfolio",
 };
 
@@ -53,6 +54,7 @@ export default async function LocaleLayout({
     >
       <body className="min-h-full flex flex-col bg-white text-neutral-900">
         <NextIntlClientProvider>
+          <IntroLoader />
           <ImageProtection />
           <Header />
           <main className="flex-1">{children}</main>
